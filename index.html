@@ -7,31 +7,50 @@
     <script src="js/scripts.js"></script>
     <title>Character Quiz</title>
   </head>
-  <body>
-    <div class="container">
-      <h1>Which Character are You?</h1>
-      <p>What weapon would you use?:</p>
-    </body>
 
-      <div class="container">
-           <form>
-             <div class="radio">
-               <label>
-                 <input type="radio" name="question1" value="kaladin" checked>
-                 Spear
-               </label>
-             </div>
-             <div class="radio">
-               <label>
-                 <input type="radio" name="question1" value="dalinar">
-                 Sword
-               </label>
-             </div>
-             <div class="radio">
-               <label>
-                 <input type="radio" name="question1" value="jasnah">
-                 Your mind
-               </label>
-             </div>
-             <button class="btn" class="submit">Show me info!</button>
-           </form>
+<body>
+ <div class="container">
+   <form>
+     <div class="radio">
+       <label>
+         <input type="radio" name="weapon" value="kaladin" checked>
+         Spear
+       </label>
+     </div>
+     <div class="radio">
+       <label>
+         <input type="radio" name="animal" value="dalinar">
+         Sword
+       </label>
+     </div>
+     <div class="radio">
+       <label>
+         <input type="radio" name="animal" value="jasnah">
+         Your mind
+       </label>
+     </div>
+     <button class="btn" class="submit">Show me info!</button>
+   </form>
+
+   <div id="kaladin">
+     <h1>You got kaladin</h1>
+    </div>
+
+
+
+   <div id="dalinar">
+     <h1>You got Dalinar</h1>
+     </div>
+
+
+
+<div id="jasnah">
+     <h1>You got Jasnah</h1>
+
+     </div>
+
+
+
+ </div>
+</body>
+</html>

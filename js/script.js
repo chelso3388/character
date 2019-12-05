@@ -1,20 +1,20 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    var question1 = $("input:[name=question1]:checked").val();
+    var animal = $("input:radio[name=weapon]:checked").val();
 
-    if (question1 === "Kaladin") {
-      $("#2").hide();
-      $("3").hide();
-      $("#1").show();
-    } else if (animal === "Dalinar") {
-      $("#1").hide();
-      $("#3").hide();
-      $("#2").show();
+    if (weapon === "kaladin") {
+      $("#dalinar").hide();
+      $("jasnah").hide();
+      $("#kaladin").show();
+    } else if (animal === "snakes") {
+      $("#insects").hide();
+      $("#turtles").hide();
+      $("#snakes").show();
     } else {
-      $("#2").hide();
-      $("#1").hide();
-      $("#3").show();
+      $("#turtles").hide();
+      $("#snakes").hide();
+      $("#insects").show();
     }
   });
 });
